@@ -8,7 +8,9 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
     features = "Features",
-        glue = {"FanPassStepDefs"}
+        glue = {"FanPassStepDefs"},
+        plugin = { "html:target/cucumber-html-report",
+                "json:target/cucumber.json", "pretty:target/cucumber-pretty.txt"}
 )
 public class TestRunner {
 }

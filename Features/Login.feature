@@ -3,6 +3,7 @@ Feature: Login
   I want to login with my credentials
   So that I can watch Sky Sport channels
 
+  @login-valid
   Scenario: Login with a valid credentials
     Given I am an authorized Fanpass user
     When I login

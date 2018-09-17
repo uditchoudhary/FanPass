@@ -1,16 +1,20 @@
 package FanPassStepDefs;
 
+import FanPassPages.FanPass;
+import FanPassPages.FanPassLoginPage;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.openqa.selenium.By;
 
 /**
  * Created by udit on 16/09/18.
  */
-public class MyStepdefs {
+public class MyStepdefs extends FanPass {
     @When("^I login$")
     public void iLogin() {
+        fanPassLoginPage.performLogin();
         System.out.println("iLogin");
     }
 

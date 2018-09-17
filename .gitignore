@@ -2,3 +2,4 @@ target/
 chromedriver
 fanpass.iml
 .idea/
+geckodriver
